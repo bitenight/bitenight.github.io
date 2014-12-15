@@ -3,10 +3,38 @@
  */
 
 
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.01rem;
+}
+
 .container {
   max-width: 960px;
 }
 
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+
+h1 {
+  font-size: 48px;
+}
+
+
+
+
+.row {
+  margin-bottom: 50px;
+}
 
 
 nav.epk-nav {
@@ -15,6 +43,7 @@ nav.epk-nav {
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   text-align: center;
+
 
   a {
     margin: 0 20px;
@@ -53,7 +82,7 @@ section {
 
 
 .epk-header {
-  //padding: 30px;
+  padding-bottom: 30px;
   min-height: 80px;
   text-align: center;
 

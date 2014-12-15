@@ -131,6 +131,7 @@ section {
 
 .navbar-default {
   background-color: #384452;
+  border-color: #384452;
 
   .navbar-nav {
 
@@ -159,15 +160,25 @@ section {
   }
 }
 
+p {
+  margin-bottom: 30px;
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+}
 
 
 .epk-header {
   width: 100%;
   height: 100%;
-  padding-top: 80px;
-  text-align: center;
+  padding-top: 70px;
+  //background-color: #00b3fe;
+
 
   img {
-    width: 200px;
+    width: 100%;
+    height: 100%;
   }
 }

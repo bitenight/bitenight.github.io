@@ -1,0 +1,491 @@
+---
+layout: default
+---
+
+
+
+
+
+<section class="epk-header">
+
+  <img src="/images/naked.jpg" class="img-responsive">
+
+</section>
+
+
+
+
+
+
+
+  <!-- Begin MailChimp Signup Form -->
+<!--
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-md-offset-3 ">
+
+        <img class="logo center-block" src="images/logo.jpg" />
+
+        <form action="//github.us9.list-manage.com/subscribe/post?u=25dfe3f35f57bc1c8f9995449&amp;id=2a6d71ff1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+
+          <div class="form-group">
+            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+          </div>
+              <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_25dfe3f35f57bc1c8f9995449_2a6d71ff1f" tabindex="-1" value="">
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary form-control">
+              </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="section-bio">
+
+  <div class="container">
+
+    <h1>BIOGRAPHY</h1>
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+
+        <h3>How we Came to be</h3>
+
+        <p>2014 was set to be a big year for the Indie music scene as 4 beautifully
+          average looking men from the Highlands of Scotland decided instead of
+          being in the crowd at the bar why not be on the stage and start getting
+          the booze for free? Luckily for us somewhere along the way we four fellas
+          had managed gain some form of musical skill in our chosen instrument and
+          so it was.</p>
+
+
+        <h3>The Sound</h3>
+
+
+        <p>The music it self is high tempo uplifting indie rock well suited
+          to a sunny summers day at a music fest or on a dark cold evening
+          in a dimly lit music venue in winter needing warmed up. With catchy
+          rhythm guitar, fast paced hooky lead breaks, flawless beats and fills
+          and some seriously funky bass our bands sound appeals to music lover
+          across the board.</p>
+
+
+        <h3>The Name</h3>
+
+        <p>After a boozy affair in a local night spot
+          Ben Rait (lead guitarist) and Ben Zebrowski (singer) had a slight
+          altercation resulting in Mr Rait biting the front man Mr Zebrowski
+          finger all resulting in the band being called Bite Night.</p>
+
+
+        <h3>Going Forward</h3>
+
+        <p>With a whirlwind first year of gigging at venues all over Scotland
+          including festival appearance at
+          <a href="http://www.tartanheartfestival.co.uk">Belladrum Tartan heart festival</a>
+          and great displays at the
+          <a href="http://www.ironworksvenue.com">Ironworks venue</a> Inverness.
+          2015 looks to be a big year for us and we can't wait to get stuck into it.</p>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="8000">
+
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+          </ol>
+
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+
+
+
+            {% for member in site.data.members %}
+
+            <div class="item {{ member.active }}">
+              <div class="row">
+
+
+                <div class="col-md-6">
+                  <!-- <img src="images/benz.jpg" class="img-responsive member-pic" alt="Responsive image"> -->
+                </div>
+
+                <div class="col-md-6">
+                  <h2>{{ member.name }}</h2>
+                  <h5>{{ member.role }}</h5>
+
+                  <p>{{member.bio}}
+                  </p>
+
+                  <p>Lorem ipsum dolor sit amet, ancillae incorrupte mei ut, mutat
+                    quodsi qualisque cu duo, harum minimum invidunt in vim. Eos an tritani
+                  </p>
+
+                  <p>Lorem ipsum dolor sit amet, ancillae incorrupte mei ut, mutat
+                    quodsi qualisque cu duo, harum minimum invidunt in vim. Eos an tritani
+                  </p>
+
+
+                </div>
+
+              </div>
+            </div>
+            {% endfor %}
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="4000">
+          <!-- Carousel indicators -->
+                  <ol class="carousel-indicators">
+            <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+            <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+          </ol>
+
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+              </blockquote>
+              <img class="profile-circle" src="images/James_King.jpg" />
+              <p class="profile-name">James King</p>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+              </blockquote>
+              <img class="profile-circle" src="images/Paul_Jones.jpg" />
+              <p class="profile-name">Paul Jones</p>
+            </div>
+            <div class="item">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+              </blockquote>
+              <img class="profile-circle" src="images/Steven_Wells.jpg" />
+              <p class="profile-name">Steven Wells</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+<section id="section-music" class="section-alt">
+
+  <div class="container">
+
+    <h1 class="page-header">Music</h1>
+
+    <p class="sub-header">A Few of our most recent songs from the Bite Night EP</p>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/79743396&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+
+      <div class="col-md-6">
+        <iframe src="https://embed.spotify.com/?uri=spotify:album:4ms5Fe6LA7DRRsIWGegDym" width="100%" height="450" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section id="section-photos">
+
+  <div class="container">
+
+    <div class="row">
+
+
+          <h1 class="page-header">Photos</h1>
+
+
+            <div class="col-md-4 col-xs-6">
+              <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <a class="thumbnail" href="#">
+                  <img src="images/naked.jpg" class="photo img-responsive" alt="Responsive image">
+              </a>
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+            <div class="col-md-4 col-xs-6">
+              <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img src="images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img src="images/naked.jpg" class="photo img-responsive" alt="Responsive image">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img src="images/cover.jpg" class="photo img-responsive" alt="Responsive image">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    <button class="btn btn-primary center-block">Download All Photos</button>
+
+
+
+  </div>
+
+
+
+</section>
+
+
+
+
+<section id="section-video" class="section-alt">
+
+  <div class="container">
+
+    <h1 class="page-header">Music Video</h1>
+
+    <p class="sub-header">Here is our debut video filmed by our good friend
+      <a href="http://www.stevebullproductions.co.uk">Steve bull.</a>
+      we wanted to make a video which shows we like to have a good time so baby
+      oil beer and wresting seemed like the obvious choice.</p>
+
+    <div class="row">
+
+      <div class="col-md-10 col-md-offset-1">
+
+        <iframe class="center-block" width="80%" height="350px" src="//www.youtube.com/embed/uWZBzo11LyQ" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--
+<section>
+
+  <div class="container">
+
+    <h1>Quotes</h1>
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<h2>Social Media</h2>
+
+<a href="https://www.facebook.com/BiteNightBand">Facebook</a>
+
+-->

@@ -1,0 +1,33 @@
+.epk-header {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/header.jpg');
+  background-size: cover;
+  //margin-top: 60px;
+
+  h1 { font-size: 36px; }
+
+
+  img {
+    width: 250px;
+    height: auto;
+    text-align: center;
+  }
+
+}
+
+.page-header {
+  margin-bottom: 40px;
+}
+
+.sub-header {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+
+.list-group-item {
+  border: 0;
+  margin-left: 0;
+}

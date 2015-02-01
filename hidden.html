@@ -1,0 +1,366 @@
+---
+layout: default
+---
+
+
+
+
+
+<section class="epk-header">
+
+  <div class="container">
+
+    <div class="row">
+
+
+
+      <div class="col-md-6">
+
+        <h3>EVENTS</h3>
+
+        <div class="list-group">
+        {% for gig in site.data.gigs %}
+
+          <div class="media event">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object event-image" src="{{ gig.image }}" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">{{ gig.name }}</h4>
+              <div><i class="fa fa-calendar fa-fw"></i>{{ gig.when }}</div>
+              <div><i class="fa fa-location-arrow fa-fw"></i>{{ gig.where}}</div>
+            </div>
+          </div>
+
+        {% endfor %}
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+  <!-- Begin MailChimp Signup Form -->
+<!--
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-6 col-md-offset-3 ">
+
+        <img class="logo center-block" src="images/logo.jpg" />
+
+        <form action="//github.us9.list-manage.com/subscribe/post?u=25dfe3f35f57bc1c8f9995449&amp;id=2a6d71ff1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+
+          <div class="form-group">
+            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+          </div>
+              <div style="position: absolute; left: -5000px;">
+                <input type="text" name="b_25dfe3f35f57bc1c8f9995449_2a6d71ff1f" tabindex="-1" value="">
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary form-control">
+              </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-bio">
+
+  <div class="container">
+
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+
+
+
+        <div class="headline center-block">2014 was set to be a big year for the Indie music scene as 4 beautifully
+          average looking men from the Highlands of Scotland decided instead of
+          being in the crowd at the bar why not be on the stage and start getting.
+        </div>
+
+
+        <p>Scottish Indie Rockers Bite Night formed in early 2014 and the four
+          piece hit the ground running making it to the final of the Highland
+          battle of the bands in their first three gigs amongst stiff and far
+          more experienced competition.
+        </p>
+
+        <p>The success of that subsequently led to gaining some great support
+          slots namely the bands first appearance at the famous Ironworks venue
+          to support the hotly tipped Palma Violets.
+          From there on in with gigs all over Scotland and a growing confidence
+          the band played to a busy tent at Belladrum Festival, not a bad
+          achievement for band who formed only 8 months prior and surely a
+          highlight of their journey so far.
+        </p>
+
+        <p>The band have now released a 4 track EP of which one of the tracks
+          "Adelaide Eyes" was selected to appear in R2 Magazines un signed
+          compilation cd for January 2015.
+          The boys also made their first music video with some raunchy oiled up
+          wrestling scenes which is sure to turn heads.
+        </p>
+
+
+        <p>2015 already looks set eclipse 2014s achievements with Brew at the
+          Bog festival and a Main Stage slot at Belladrum already in the
+          pipeline for the handsome fellas the future is sure bright.
+        </p>
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+
+<section>
+
+  <div class="container">
+
+    <div class="row">
+
+      {% for q in site.data.faq %}
+
+      <div class="col-xs-6">
+
+        <div class="faq">
+
+          <h4>{{ q.question }}</h4>
+
+          <p>{{ q.answer }}</p>
+
+        </div>
+
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section>
+
+  <div class="container">
+
+    <div class="row">
+
+      {% for member in site.data.members %}
+
+      <div class="col-sm-3">
+
+        <img src="{{member.pic-link }}" class="img-responsive member-pic" alt="Responsive image">
+
+        <h2 class="member-name">{{ member.name }}</h2>
+        <span class="member-role">{{ member.role }}</span>
+
+
+
+
+      </div>
+
+      {% endfor %}
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section-alt">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+              </blockquote>
+
+              <p class="profile-name">Paul Jones</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+
+<section id="section-music">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/79743396&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+
+    
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<section id="section-photos">
+
+  <div class="container small">
+
+    <div class="row">
+
+
+            <div class="col-md-4 col-xs-6">
+              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-4 col-xs-6">
+              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    <button class="btn btn-primary center-block">Download All Photos</button>
+
+
+
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+
+  <div class="container">
+
+
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <form action="" method="POST">
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" name="message"></textarea>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,48 @@
+
+
+.navbar-default {
+
+  background: transparent;
+  border: 0;
+
+  .active {
+
+  }
+
+}
+
+
+.navbar-nav {
+
+  li.active a {
+    background-color: transparent;
+  }
+}
+
+
+.navmenu-fixed-right {
+  z-index: 9999;
+}
+
+
+a.menu-button {
+
+
+  font-size: 24px;
+  color: #333;
+  background: transparent;
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+}
+
+
+.navbar-brand {
+
+  i {
+
+  }
+}

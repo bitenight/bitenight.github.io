@@ -2,18 +2,22 @@
   role: Lead Singer
   bio: Lorem ipsum
   active: active
+  pic-link: /images/photos/benz.jpg
 
 
-- name: Ben Zebrowski
-  role: Lead Singer
+- name: Ben Rait
+  role: Lead Guitar
   bio: Lorem ipsum
+  pic-link: /images/photos/benr.jpg
 
 
-- name: Ben Zebrowski
-  role: Lead Singer
+- name: Kenny Lyall
+  role: Drums
   bio: Lorem ipsum
+  pic-link: /images/photos/kenny.jpg
 
 
-- name: Ben Zebrowski
-  role: Lead Singer
+- name: Lisle Geddes
+  role: Bass Guitar
   bio: Lorem ipsum
+  pic-link: /images/photos/lisle.jpg

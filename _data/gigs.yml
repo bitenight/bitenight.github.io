@@ -1,7 +1,8 @@
-- name: Belladrum Festival
-  link: http://www.tartanheartfestival.co.uk/
-  image: /images/belladrum-logo.png
-  when: 06/08/2015
+
+- name: Hootenannys
+  link: ''
+  image: /images/hoots-logo.jpg
+  when: 04/04/2015
   where: Inverness, Scotland
 
 
@@ -12,8 +13,8 @@
   where: Inverness, Scotland
 
 
-- name: Hootenannys
-  link: ''
-  image: /images/hoots-logo.jpg
-  when: 04/04/2015
+- name: Belladrum Festival
+  link: http://www.tartanheartfestival.co.uk/
+  image: /images/belladrum-logo.png
+  when: 06/08/2015
   where: Inverness, Scotland

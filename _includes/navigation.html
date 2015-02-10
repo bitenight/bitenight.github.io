@@ -1,30 +1,22 @@
-<div class="navmenu navmenu-default navmenu-fixed-right offcanvas" style="">
+<div ng-controller="OffCanvasController as ctrl" class="">
 
-  <a class="navmenu-brand" href="#">Bite Night Press Kit</a>
 
-  <ul class="nav navmenu-nav">
-    <li class="active"><a href="./">Slide in</a></li>
-    <li><a href="#section-bio">Biography</a></li>
-    <li><a href="../navmenu-reveal/">Upcoming Events</a></li>
-    <li><a href="../navbar-offcanvas/">Music</a></li>
-  </ul>
+  <a class="nav-icon" ng-href="" ng-click="ctrl.toggle()">
+    <i class="fa fa-bars"></i>
+  </a>
 
-</div>
 
-<div class="navbar navbar-default navbar-fixed-top">
 
-  <div class="container">
 
-    <a class="navbar-brand" href="#">Project name</a>
+  <div class="offcanvas" ng-cloak ng-show="ctrl.isActive">
+      <h2 class="icon icon-lab">Bite Night</h2>
+				<ul>
+					<li><a class="icon icon-data" ng-href="/">Biography</a></li>
+					<li><a class="icon icon-location" ng-href="/">Members</a></li>
+					<li><a class="icon icon-study" ng-href="/">Music</a></li>
+					<li><a class="icon icon-photo" ng-href="/">Contact Us</a></li>
 
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="#" role="button" class="btn menu-button" data-toggle="offcanvas" data-target=".navmenu">
-          <i class="fa fa-bars"></i>
-        </a>
-      </li>
-    </ul>
-
+				</ul>
   </div>
 
 </div>

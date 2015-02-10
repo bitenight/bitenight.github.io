@@ -1,12 +1,37 @@
 form {
 
-  text-align: center;
-  width: 100%;
 
   input.form-control {
     height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
   }
 
 
+  textarea.form-control {
+    height: 8em;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+  }
 
+
+  button {
+    text-align: center;
+  }
+
+
+}
+
+
+.btn-custom {
+  padding: 12px 36px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  color: #333;
+  font-size: 16px;
+  background: transparent;
+
+  i {
+    margin: 0 10px;
+  }
 }

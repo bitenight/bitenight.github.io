@@ -28,10 +28,12 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 
 @import "base";
-
+@import "offcanvas";
 @import "members";
 @import "navigation";
 @import "bio";
 @import "header";
 @import "contact";
 @import "photos";
+@import "timeline";
+@import "quotes";

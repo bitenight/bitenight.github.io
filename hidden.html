@@ -8,44 +8,15 @@ layout: default
 
 <section class="epk-header">
 
-  <div class="container">
+  <div class="container squeeze align-center">
 
-    <div class="row">
-
-
-
-      <div class="col-md-6">
-
-        <h3>EVENTS</h3>
-
-        <div class="list-group">
-        {% for gig in site.data.gigs %}
-
-          <div class="media event">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object event-image" src="{{ gig.image }}" alt="...">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">{{ gig.name }}</h4>
-              <div><i class="fa fa-calendar fa-fw"></i>{{ gig.when }}</div>
-              <div><i class="fa fa-location-arrow fa-fw"></i>{{ gig.where}}</div>
-            </div>
-          </div>
-
-        {% endfor %}
-        </div>
-
-      </div>
+    <h1>Bite Night Press Kit</h1>
 
 
+    <button class="btn btn-custom">Download<i class="fa fa-download"></i></button>
 
+  </div>
 
-    </div>
-
-
-    </div>
 
 
 
@@ -92,34 +63,22 @@ layout: default
 
 
 
+{% include navigation.html %}
 
 
 
+<section class="page-section" id="section-bio">
+
+  <div class="container squeeze">
 
 
+      <section>
+        <h4>BACKSTORY</h4>
 
-
-
-
-
-
-<section id="section-bio">
-
-  <div class="container">
-
-
-
-    <div class="row">
-
-      <div class="col-md-12">
-
-
-
-
-        <div class="headline center-block">2014 was set to be a big year for the Indie music scene as 4 beautifully
+        <p>2014 was set to be a big year for the Indie music scene as 4 beautifully
           average looking men from the Highlands of Scotland decided instead of
           being in the crowd at the bar why not be on the stage and start getting.
-        </div>
+        </p>
 
 
         <p>Scottish Indie Rockers Bite Night formed in early 2014 and the four
@@ -127,6 +86,12 @@ layout: default
           battle of the bands in their first three gigs amongst stiff and far
           more experienced competition.
         </p>
+
+      </section>
+
+      <section>
+
+        <h4>MUSIC STYLE AND INFLUENCES</h4>
 
         <p>The success of that subsequently led to gaining some great support
           slots namely the bands first appearance at the famous Ironworks venue
@@ -136,6 +101,12 @@ layout: default
           achievement for band who formed only 8 months prior and surely a
           highlight of their journey so far.
         </p>
+
+      </section>
+
+      <section>
+
+        <h4>SOMETHING</h4>
 
         <p>The band have now released a 4 track EP of which one of the tracks
           "Adelaide Eyes" was selected to appear in R2 Magazines un signed
@@ -150,33 +121,74 @@ layout: default
           pipeline for the handsome fellas the future is sure bright.
         </p>
 
+      </section>
+
+    </div>
 
 
+</section>
+
+
+<section class="page-section" id="section-timeline">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-5 col-md-offset-1">
+
+        <h2>Past</h2>
+
+        {% include timeline.html %}
+
+      </div>
+
+      <div class="col-md-5 col-md-offset-1">
+
+        <h2>Upcoming</h2>
+
+        <article id="timeline">
+
+          <div class="timeline-bar">
+
+
+
+            <section class="year">
+              <h3>2015</h3>
+              {% for gig in site.data.gigs %}
+              <section class="event">
+                <h4>{{gig.name}}</h4>
+                <ul>
+                  <li><i class="fa fa-calendar fa-fw"></i>{{gig.when}}</li>
+                  <li><i class="fa fa-location-arrow fa-fw"></i>{{gig.where}}</li>
+                </ul>
+              </section>
+              {% endfor %}
+
+            </section>
+
+
+
+          </div>
+        </article>
 
 
       </div>
 
     </div>
 
-
   </div>
 
 </section>
 
 
+<section id="section-faq" class="page-section section-alt">
 
-
-<section>
-
-  <div class="container">
-
-    <div class="row">
+  <div class="container squeeze">
 
       {% for q in site.data.faq %}
 
-      <div class="col-xs-6">
-
-        <div class="faq">
+        <div class="col-md-6 faq">
 
           <h4>{{ q.question }}</h4>
 
@@ -184,69 +196,34 @@ layout: default
 
         </div>
 
-
-      </div>
-
       {% endfor %}
 
-    </div>
-
   </div>
+
 </section>
 
 
 
+<section id="section-members" class="page-section">
 
-<section>
-
-  <div class="container">
+  <div class="container squeeze">
 
     <div class="row">
 
       {% for member in site.data.members %}
+      <div class="col-md-6">
 
-      <div class="col-sm-3">
+        <img src="{{member.pic-link}}" class="member-pic" alt="image01"/>
+        <h4>{{member.name}}</h4>
+        <span>{{member.role}}</span>
 
-        <img src="{{member.pic-link }}" class="img-responsive member-pic" alt="Responsive image">
-
-        <h2 class="member-name">{{ member.name }}</h2>
-        <span class="member-role">{{ member.role }}</span>
-
-
-
+        <p>adkadjakjdakjda</p>
 
       </div>
-
       {% endfor %}
 
-
     </div>
 
-  </div>
-
-</section>
-
-
-
-
-
-
-
-
-<section class="section-alt">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-
-              <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-              </blockquote>
-
-              <p class="profile-name">Paul Jones</p>
-
-      </div>
-    </div>
   </div>
 
 
@@ -255,57 +232,24 @@ layout: default
 
 
 
+<section id="carousel" class="page-section section-alt">
 
-<section id="section-music">
+  <div class="container squeeze">
 
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-md-12">
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/79743396&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
-
-    
-    </div>
+    {% include quotes.html %}
 
   </div>
+
 
 </section>
 
 
 
+<section id="section-events" class="page-section">
 
-<section id="section-photos">
-
-  <div class="container small">
-
-    <div class="row">
+  <div class="container squeeze">
 
 
-            <div class="col-md-4 col-xs-6">
-              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-            </div>
-            <div class="col-md-4 col-xs-6">
-              <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
-            </div>
-            <div class="col-md-4 col-xs-6">
-              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-            </div>
-            <div class="col-md-4 col-xs-6">
-              <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-            </div>
-
-
-
-
-
-        </div>
-
-
-
-
-    <button class="btn btn-primary center-block">Download All Photos</button>
 
 
 
@@ -318,49 +262,55 @@ layout: default
 
 
 
+<section id="section-music" class="page-section">
 
+  <div class="container squeeze">
 
-
-
-
-
-
-
-
-
-
-<section>
-
-  <div class="container">
-
-
-    <div class="row">
-
-      <div class="col-sm-8 col-sm-offset-2">
-
-        <form action="" method="POST">
-
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" class="form-control" name="name">
-          </div>
-
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" class="form-control" name="email">
-          </div>
-
-          <div class="form-group">
-            <label>Message</label>
-            <textarea class="form-control" name="message"></textarea>
-          </div>
-
-        </form>
-
-      </div>
-
-    </div>
+    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/79743396&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
   </div>
+
+</section>
+
+
+
+
+        <section id="section-photos" class="page-section">
+
+            <div class="container">
+
+
+                <div class="col-md-3 col-xs-6">
+                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+                </div>
+
+            </div>
+
+
+            <button class="btn btn-custom center-block">Download All Photos</button>
+
+
+        </section>
+
+
+
+
+<section id="section-contact" class="page-section">
+
+  <div class="container squeeze">
+
+    {% include contact.html %}
+
+  </div>
+
 
 </section>

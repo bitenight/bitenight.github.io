@@ -1,62 +1,35 @@
-/**
- * Reset some basic elements
- */
-
-
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
 
-body, html {
-  width: 100%;
-  height: 100%;
-}
 
 body {
   font-family: 'Roboto', sans-serif;
+  color:#444;
+  font-size: 16px;
+
+
+}
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #292e31;
+}
+
+h2 {
+  margin: 40px 0 15px 0;
+}
+
+h4 {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.01rem;
 }
 
 
-.faq {
-
-  padding: 24px;
+.page-section {
+  padding: 25px 0;
 }
-
-
-p {
-  color: #333;
-  line-height: 1.8em;
-}
-
-
-a {
-  color: #384452;
-  font-weight: 700;
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.container {
-  max-width: 1024px;
-}
-
-
-
-.navbar-toggle {
-  border: 0;
-  font-size: 24px;
-
-  &:hover, &:focus {
-    background: transparent;
-  }
-}
-
 
 .event {
 
@@ -76,31 +49,7 @@ a {
 }
 
 
-
-
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-
-h1 {
-  font-size: 2.5em;
-}
-
-
-
-
-.row {
-  margin-bottom: 50px;
-}
-
-
-
-
-.container.small {
+.container.squeeze {
   max-width: 960px;
 
 }
@@ -113,57 +62,110 @@ h1 {
 }
 
 
-section {
-  padding-top: 100px;
-  padding-bottom: 30px;
+section.page-section {
+  padding: 4em 0;
+}
 
 
-  h1 {
-    text-align: center;
 
+
+
+.bio {
+  padding-right: 80px;
+}
+
+.row {
+  margin: 10px 0 40px 0;
+}
+
+
+a {
+  color: #CE6607;
+  text-decoration:none;
+  border-bottom: 0;
+
+  &:hover {
+    color:#A35208;
+    text-decoration: none;
+    text-shadow:none;
+    color:#333;
+    background:#FFFFCF;
   }
+
+  &:focus { outline: none; }
 }
 
+a {
+  color:#333;
 
 
-
-
-
-
-
-.section-alt {
-  background: #f3f3f3;
+  &:hover { color:#000; background-color:#f7f7f7; }
 }
+
 
 
 
 p {
-  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  //color: #596368;
+
+  a {
+    padding: 2px;
+    background-color:#efefef;
+
+    &:hover {
+      background-color: #efefef;
+    }
+  }
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+
+.align-center {
+  text-align: center;
 }
 
 
 
 
+.nav-icon {
 
+  &:hover {
+    cursor: pointer;
+  }
 
-
-
-
-
-
-
-
-
-.headline {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 2.5em;
-  color: #111;
-  max-width: 960px;
-
-
-
-  @include media-query(678px) {
+  i {
     font-size: 20px;
   }
+}
+
+
+.section-alt {
+  background: #eee;
+}
+
+
+
+a.link {
+  text-align: center;
+  margin: 40px auto;
+  display: inline-block;
+  color: #333;
+  padding: .4em 1em;
+  border-bottom: 1px solid #ddd;
+  font-style: italic;
+
+  &:after { content: " →"; }
+
+  &:hover {
+    background:#FFFFCF;
+    text-decoration: none;
+  }
+
 }

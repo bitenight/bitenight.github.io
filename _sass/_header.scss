@@ -1,11 +1,14 @@
 .epk-header {
 
-  height: 200px;
+  //height: 250px;
   align: center;
-  background: #eee;
+  background: #ecf0f2;
+  padding: 60px;
 
 
-  h1 { font-size: 36px; }
+  h1 {
+    font-size: 36px;
+  }
 
 
   img {
@@ -26,6 +29,28 @@
 }
 
 
+
+.main-heading {
+  font-size: 36px;
+  font-weight: 300;
+  color: #292e31;
+}
+
+
+nav.social-links {
+  margin-top: 30px;
+  color: #596368;
+
+  a {
+    margin: 0 40px;
+    background-color: transparent;
+
+    i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  }
+}
 
 .list-group-item {
   border: 0;

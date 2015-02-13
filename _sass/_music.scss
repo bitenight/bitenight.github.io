@@ -1,0 +1,35 @@
+
+
+
+.player {
+
+  img.cover {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .player-item {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 24px;
+    background: #eee;
+    border-radius: 3px;
+    font-size: 18px;
+
+    .player-track-name {
+      display: inline-block;
+      margin-left: 20px;
+
+    }
+
+
+    .progress {
+      height: 0.4rem;
+      margin: 5px 0 0 0;
+    }
+
+
+  }
+
+}

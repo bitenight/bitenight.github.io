@@ -1,7 +1,18 @@
 ---
 ---
 
-app = angular.module 'siteApp', ['ngAnimate']
+
+
+
+
+app = angular.module 'siteApp', ['ngAnimate', 'plangular']
+
+
+app.config [ ->
+
+
+
+]
 
 
 

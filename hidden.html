@@ -10,10 +10,18 @@ layout: default
 
   <div class="container squeeze align-center">
 
-    <h1>Bite Night Press Kit</h1>
+    <h1 class="main-heading">Press Resources</h1>
 
 
     <button class="btn btn-custom">Download<i class="fa fa-download"></i></button>
+    <a ng-href="https://www.youtube.com/watch?v=uWZBzo11LyQ" target="_blank" class="btn btn-custom">View our Video</a>
+
+
+    <nav class="social-links">
+      <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><i class="fa fa-facebook"></i>BiteNightBand</a>
+      <a ng-href="https://twitter.com/bite_night" target="_blank"><i class="fa fa-twitter"></i>@Bite_Night</a>
+      <a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><i class="fa fa-youtube"></i>Bite Night Band</a>
+    </nav>
 
   </div>
 
@@ -26,291 +34,259 @@ layout: default
 
 
 
-  <!-- Begin MailChimp Signup Form -->
-<!--
-  <div class="container">
+<div class="container">
 
-    <div class="row">
+  <div class="row">
 
-      <div class="col-md-6 col-md-offset-3 ">
+    <div class="col-sm-3 press-nav">
 
-        <img class="logo center-block" src="images/logo.jpg" />
+      <ul class="nav nav-stacked press-nav-spy" data-spy="affix" data-offset-top="350">
 
-        <form action="//github.us9.list-manage.com/subscribe/post?u=25dfe3f35f57bc1c8f9995449&amp;id=2a6d71ff1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        <li><a ng-href="#section-bio">Biography</a></li>
+        <li><a ng-href="#section-timeline">Timeline</a></li>
+        <li><a ng-href="#section-faq">FAQ</a></li>
+        <li><a ng-href="#section-music">Music</a></li>
+        <li><a ng-href="#section-photos">Photos</a></li>
+        <li><a ng-href="#section-contact">Contact</a></li>
 
-          <div class="form-group">
-            <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
-          </div>
-              <div style="position: absolute; left: -5000px;">
-                <input type="text" name="b_25dfe3f35f57bc1c8f9995449_2a6d71ff1f" tabindex="-1" value="">
-              </div>
-
-              <div class="form-group">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary form-control">
-              </div>
-
-        </form>
-
-      </div>
-
-    </div>
-  -->
-
-
-
-
-
-
-
-
-{% include navigation.html %}
-
-
-
-<section class="page-section" id="section-bio">
-
-  <div class="container squeeze">
-
-
-      <section>
-        <h4>BACKSTORY</h4>
-
-        <p>2014 was set to be a big year for the Indie music scene as 4 beautifully
-          average looking men from the Highlands of Scotland decided instead of
-          being in the crowd at the bar why not be on the stage and start getting.
-        </p>
-
-
-        <p>Scottish Indie Rockers Bite Night formed in early 2014 and the four
-          piece hit the ground running making it to the final of the Highland
-          battle of the bands in their first three gigs amongst stiff and far
-          more experienced competition.
-        </p>
-
-      </section>
-
-      <section>
-
-        <h4>MUSIC STYLE AND INFLUENCES</h4>
-
-        <p>The success of that subsequently led to gaining some great support
-          slots namely the bands first appearance at the famous Ironworks venue
-          to support the hotly tipped Palma Violets.
-          From there on in with gigs all over Scotland and a growing confidence
-          the band played to a busy tent at Belladrum Festival, not a bad
-          achievement for band who formed only 8 months prior and surely a
-          highlight of their journey so far.
-        </p>
-
-      </section>
-
-      <section>
-
-        <h4>SOMETHING</h4>
-
-        <p>The band have now released a 4 track EP of which one of the tracks
-          "Adelaide Eyes" was selected to appear in R2 Magazines un signed
-          compilation cd for January 2015.
-          The boys also made their first music video with some raunchy oiled up
-          wrestling scenes which is sure to turn heads.
-        </p>
-
-
-        <p>2015 already looks set eclipse 2014s achievements with Brew at the
-          Bog festival and a Main Stage slot at Belladrum already in the
-          pipeline for the handsome fellas the future is sure bright.
-        </p>
-
-      </section>
+      </ul>
 
     </div>
 
 
-</section>
+    <div class="col-sm-9">
 
 
-<section class="page-section" id="section-timeline">
+      <section class="page-section" id="section-bio">
 
-  <div class="container">
+            <section class="bio">
+              <h4>BACKSTORY</h4>
 
-    <div class="row">
-
-      <div class="col-md-5 col-md-offset-1">
-
-        <h2>Past</h2>
-
-        {% include timeline.html %}
-
-      </div>
-
-      <div class="col-md-5 col-md-offset-1">
-
-        <h2>Upcoming</h2>
-
-        <article id="timeline">
-
-          <div class="timeline-bar">
+              <p>2014 was set to be a big year for the Indie music scene as 4 beautifully
+                average looking men from the Highlands of Scotland decided instead of
+                being in the crowd at the bar why not be on the stage and start getting.
+              </p>
 
 
+              <p>Scottish Indie Rockers Bite Night formed in early 2014 and the four
+                piece hit the ground running making it to the
+                <a ng-href="http://www.inverness-courier.co.uk/Whats-On/Music/Grand-Final-Preview-The-Eagle-Battle-Of-The-Bands-29012014.htm">
+                final of the Highland Battle of the Bands</a> in their first three gigs amongst stiff and far
+                more experienced competition.
+              </p>
 
-            <section class="year">
-              <h3>2015</h3>
-              {% for gig in site.data.gigs %}
-              <section class="event">
-                <h4>{{gig.name}}</h4>
-                <ul>
-                  <li><i class="fa fa-calendar fa-fw"></i>{{gig.when}}</li>
-                  <li><i class="fa fa-location-arrow fa-fw"></i>{{gig.where}}</li>
-                </ul>
-              </section>
-              {% endfor %}
+            </section>
+
+            <section class="bio">
+
+              <h4>MUSIC STYLE AND INFLUENCES</h4>
+
+              <p>The success of that subsequently led to gaining some great support
+                slots namely the bands first appearance at the famous Ironworks venue
+                to support the hotly tipped Palma Violets.
+                From there on in with gigs all over Scotland and a growing confidence
+                the band played to a busy tent at Belladrum Festival, not a bad
+                achievement for band who formed only 8 months prior and surely a
+                highlight of their journey so far.
+              </p>
+
+            </section>
+
+            <section class="bio">
+
+              <h4>SOMETHING</h4>
+
+              <p>The band have now released a 4 track EP of which one of the tracks
+                "Adelaide Eyes" was selected to appear in R2 Magazines un signed
+                compilation cd for January 2015.
+                The boys also made their first music video with some raunchy oiled up
+                wrestling scenes which is sure to turn heads.
+              </p>
+
+
+              <p>2015 already looks set eclipse 2014s achievements with Brew at the
+                Bog festival and a Main Stage slot at Belladrum already in the
+                pipeline for the handsome fellas the future is sure bright.
+              </p>
 
             </section>
 
 
 
-          </div>
-        </article>
 
+      </section>
 
-      </div>
 
-    </div>
+      <section class="page-section" id="section-timeline">
 
-  </div>
+          {% include timeline.html %}
 
-</section>
+      </section>
 
 
-<section id="section-faq" class="page-section section-alt">
+      <section id="section-faq" class="page-section">
 
-  <div class="container squeeze">
 
-      {% for q in site.data.faq %}
 
-        <div class="col-md-6 faq">
+            {% for q in site.data.faq %}
 
-          <h4>{{ q.question }}</h4>
+              <div class="col-md-6 faq">
 
-          <p>{{ q.answer }}</p>
+                <h4>{{ q.question }}</h4>
 
-        </div>
+                <p>{{ q.answer }}</p>
 
-      {% endfor %}
+              </div>
 
-  </div>
+            {% endfor %}
 
-</section>
 
 
+      </section>
 
-<section id="section-members" class="page-section">
 
-  <div class="container squeeze">
 
-    <div class="row">
+      <section id="section-members" class="page-section">
 
-      {% for member in site.data.members %}
-      <div class="col-md-6">
 
-        <img src="{{member.pic-link}}" class="member-pic" alt="image01"/>
-        <h4>{{member.name}}</h4>
-        <span>{{member.role}}</span>
 
-        <p>adkadjakjdakjda</p>
+          <div class="row">
 
-      </div>
-      {% endfor %}
 
-    </div>
+            <div class="col-md-6 member">
 
-  </div>
+              <img src="/images/photos/benz.jpg" class="member-pic img-responsive" alt="Ben Zebrowski"/>
+              <h2 class="member-name">Ben Zebrowski</h2>
+              <h4 class="member-role">Singer/Guitarist</h4>
 
-
-
-</section>
-
-
-
-<section id="carousel" class="page-section section-alt">
-
-  <div class="container squeeze">
-
-    {% include quotes.html %}
-
-  </div>
-
-
-</section>
-
-
-
-<section id="section-events" class="page-section">
-
-  <div class="container squeeze">
-
-
-
-
-
-  </div>
-
-
-
-</section>
-
-
-
-
-<section id="section-music" class="page-section">
-
-  <div class="container squeeze">
-
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/79743396&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-  </div>
-
-</section>
-
-
-
-
-        <section id="section-photos" class="page-section">
-
-            <div class="container">
-
-
-                <div class="col-md-3 col-xs-6">
-                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-xs-6">
-                  <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-xs-6">
-                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-                </div>
-                <div class="col-md-3 col-xs-6">
-                  <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-                </div>
+              <p>With Scottish, Polish and English blood in him and the ability to
+                speak 2 of those languages Ben is the songwriter, Ben can often be
+                spotted singing wildly out of tune on the A9 (in his car).
+              </p>
 
             </div>
 
 
-            <button class="btn btn-custom center-block">Download All Photos</button>
+            <div class="col-md-6 member">
+
+              <img src="/images/photos/benr.jpg" class="member-pic img-responsive" alt="Ben Rait"/>
+              <h2 class="member-name">Ben Rait</h2>
+              <h4 class="member-role">Lead Guitar</h4>
+
+              <p>A previous bedroom busker Ben the lead guitarist is utterly brilliant
+                on the guitar and gives the band our signature sound as
+                long as he’s well fed.
+              </p>
+
+            </div>
+
+          </div>
 
 
-        </section>
+          <div class="row">
+
+
+            <div class="col-md-6 member">
+
+              <img src="/images/photos/kenny.jpg" class="member-pic img-responsive" alt="Kenny Lyall"/>
+              <h2 class="member-name">Kenny Lyall</h2>
+              <h4 class="member-role">Drummer</h4>
+
+              <p>Kenny the drummer started off his drumming career on the pots and
+                pans in his mums kitchen in Wick before becoming the flawless time
+                keeper of the band.
+              </p>
+
+            </div>
+
+
+            <div class="col-md-6 member">
+
+              <img src="/images/photos/lisle.jpg" class="member-pic img-responsive" alt="Lisle Geddes"/>
+              <h2 class="member-name">Lisle Geddes</h2>
+              <h4 class="member-role">Bass</h4>
+
+              <p>Hailing from the distant forests of Cannich lisle lovely smile
+                which few have seen compliment the youngest of the groups fantastic
+                ability on the bass
+              </p>
+
+            </div>
+
+          </div>
 
 
 
 
-<section id="section-contact" class="page-section">
 
-  <div class="container squeeze">
+      </section>
 
-    {% include contact.html %}
+
+
+
+
+
+      <section id="section-events" class="page-section">
+
+
+
+
+      </section>
+
+
+
+
+      <section id="section-music" class="page-section">
+
+
+        {% include music.html %}
+
+
+
+      </section>
+
+
+
+
+      <section id="section-photos" class="page-section">
+
+          <div class="row">
+
+
+              <div class="col-md-4">
+                <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-4">
+                <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-4">
+                <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+              </div>
+              <div class="col-md-4">
+                <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+              </div>
+
+          </div>
+
+
+          <button class="btn btn-custom center-block">Download All Photos</button>
+
+
+      </section>
+
+
+
+
+      <section id="section-contact" class="page-section">
+
+
+          {% include contact.html %}
+
+
+      </section>
+
+    </div>
 
   </div>
 
-
-</section>
+</div>

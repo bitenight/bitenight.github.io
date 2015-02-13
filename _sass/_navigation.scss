@@ -2,3 +2,41 @@
 .active {
   background-color: #eee;
 }
+
+.navigation {
+  height: 60px;
+  line-height: 60px;
+
+  a {
+    background: transparent;
+  }
+}
+
+.navbar-default {
+  background: #eee;
+  border: 0;
+  margin-bottom: 0;
+}
+
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: #eee;
+}
+.navbar>.container .navbar-brand-centered,
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -80px;
+}

@@ -27,9 +27,29 @@ h4 {
 }
 
 
-.page-section {
-  padding: 25px 0;
+.press-nav {
+  padding-top: 4em;
+
+  a {
+    background-color: white;
+  }
+
+
+  ul.affix {
+  	position: fixed;
+  	top: 70px;
+
+  }
+  ul.affix-top {
+  	position: static;
+  }
+  ul.affix-bottom {
+  	position: absolute;
+  }
+
 }
+
+
 
 .event {
 
@@ -49,10 +69,6 @@ h4 {
 }
 
 
-.container.squeeze {
-  max-width: 960px;
-
-}
 
 
 .logo {
@@ -70,38 +86,17 @@ section.page-section {
 
 
 
-.bio {
-  padding-right: 80px;
-}
-
-.row {
-  margin: 10px 0 40px 0;
-}
-
-
 a {
-  color: #CE6607;
-  text-decoration:none;
-  border-bottom: 0;
+  padding: 2px;
+  color: #333;
+  background-color: #7a8cf3;
+  background-color: rgba(122, 140, 243, 0.3);
 
   &:hover {
-    color:#A35208;
+    //background-color: #efefef;
     text-decoration: none;
-    text-shadow:none;
-    color:#333;
-    background:#FFFFCF;
   }
-
-  &:focus { outline: none; }
 }
-
-a {
-  color:#333;
-
-
-  &:hover { color:#000; background-color:#f7f7f7; }
-}
-
 
 
 
@@ -109,15 +104,6 @@ p {
   font-size: 16px;
   line-height: 1.42857143;
   //color: #596368;
-
-  a {
-    padding: 2px;
-    background-color:#efefef;
-
-    &:hover {
-      background-color: #efefef;
-    }
-  }
 }
 
 
@@ -136,19 +122,19 @@ h1 {
 
 .nav-icon {
 
+  padding-top: 15px;
+  height: 50px;
+
   &:hover {
     cursor: pointer;
   }
 
   i {
     font-size: 20px;
+    vertical-align: center;
   }
 }
 
-
-.section-alt {
-  background: #eee;
-}
 
 
 

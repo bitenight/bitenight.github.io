@@ -13,10 +13,6 @@ layout: default
     <h1 class="main-heading">Press Resources</h1>
 
 
-    <button class="btn btn-custom">Download<i class="fa fa-download"></i></button>
-    <a ng-href="https://www.youtube.com/watch?v=uWZBzo11LyQ" target="_blank" class="btn btn-custom">View our Video</a>
-
-
     <nav class="social-links">
       <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><i class="fa fa-facebook"></i>BiteNightBand</a>
       <a ng-href="https://twitter.com/bite_night" target="_blank"><i class="fa fa-twitter"></i>@Bite_Night</a>
@@ -38,7 +34,7 @@ layout: default
 
   <div class="row">
 
-    <div class="col-sm-3 press-nav">
+    <div class="col-sm-3 press-nav hidden-xs">
 
       <ul class="nav nav-stacked press-nav-spy" data-spy="affix" data-offset-top="350">
 
@@ -124,56 +120,51 @@ layout: default
       </section>
 
 
-      <section id="section-faq" class="page-section">
-
-
-
-            {% for q in site.data.faq %}
-
-              <div class="col-md-6 faq">
-
-                <h4>{{ q.question }}</h4>
-
-                <p>{{ q.answer }}</p>
-
-              </div>
-
-            {% endfor %}
-
-
-
-      </section>
-
-
 
       <section id="section-members" class="page-section">
 
 
 
-          <div class="row">
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <div class="member-pic img-responsive"></div>
+
+            </div>
 
 
-            <div class="col-md-6 member">
+            <div class="col-md-6">
 
-              <img src="/images/photos/benz.jpg" class="member-pic img-responsive" alt="Ben Zebrowski"/>
               <h2 class="member-name">Ben Zebrowski</h2>
-              <h4 class="member-role">Singer/Guitarist</h4>
+              <span class="member-role">Singer/Guitarist</span>
 
-              <p>With Scottish, Polish and English blood in him and the ability to
+              <p class="member-bio">With Scottish, Polish and English blood in him and the ability to
                 speak 2 of those languages Ben is the songwriter, Ben can often be
                 spotted singing wildly out of tune on the A9 (in his car).
               </p>
 
             </div>
 
+          </div>
 
-            <div class="col-md-6 member">
 
-              <img src="/images/photos/benr.jpg" class="member-pic img-responsive" alt="Ben Rait"/>
+
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <div class="member-pic img-responsive"></div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
               <h2 class="member-name">Ben Rait</h2>
-              <h4 class="member-role">Lead Guitar</h4>
+              <span class="member-role">Lead Guitar</span>
 
-              <p>A previous bedroom busker Ben the lead guitarist is utterly brilliant
+              <p class="member-bio">A previous bedroom busker Ben the lead guitarist is utterly brilliant
                 on the guitar and gives the band our signature sound as
                 long as he’s well fed.
               </p>
@@ -183,30 +174,47 @@ layout: default
           </div>
 
 
-          <div class="row">
 
 
-            <div class="col-md-6 member">
+          <div class="row member">
 
-              <img src="/images/photos/kenny.jpg" class="member-pic img-responsive" alt="Kenny Lyall"/>
+            <div class="col-md-6">
+
+              <div class="member-pic img-responsive"></div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
               <h2 class="member-name">Kenny Lyall</h2>
-              <h4 class="member-role">Drummer</h4>
+              <span class="member-role">DRUMMER</span>
 
-              <p>Kenny the drummer started off his drumming career on the pots and
+              <p class="member-bio">Kenny the drummer started off his drumming career on the pots and
                 pans in his mums kitchen in Wick before becoming the flawless time
                 keeper of the band.
               </p>
 
             </div>
 
+          </div>
 
-            <div class="col-md-6 member">
 
-              <img src="/images/photos/lisle.jpg" class="member-pic img-responsive" alt="Lisle Geddes"/>
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <div class="member-pic img-responsive"></div>
+
+            </div>
+
+
+            <div class="col-md-6">
+
               <h2 class="member-name">Lisle Geddes</h2>
-              <h4 class="member-role">Bass</h4>
+              <span class="member-role">Bass</span>
 
-              <p>Hailing from the distant forests of Cannich lisle lovely smile
+              <p class="member-bio">Hailing from the distant forests of Cannich lisle lovely smile
                 which few have seen compliment the youngest of the groups fantastic
                 ability on the bass
               </p>

@@ -2,12 +2,17 @@
 
   //height: 250px;
   align: center;
-  background: #ecf0f2;
+  background: #33435a;
   padding: 60px;
+  color: white;
 
 
-  h1 {
-    font-size: 36px;
+  h1.main-heading {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
   }
 
 
@@ -30,11 +35,6 @@
 
 
 
-.main-heading {
-  font-size: 36px;
-  font-weight: 300;
-  color: #292e31;
-}
 
 
 nav.social-links {

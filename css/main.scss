@@ -38,3 +38,48 @@
 @import "timeline";
 @import "quotes";
 @import "music";
+
+
+.page-section {
+    height: 100%;
+    padding-top: 150px;
+    background: #fff;
+}
+
+.footer-padding {
+  height: 30px;
+}
+
+
+
+.press-nav {
+
+  ul {
+
+    li {
+
+      a {
+        color: #777;
+      }
+
+      &.active {
+
+        a {
+          color: #333;
+          background: white;
+          border: 2px solid #333;
+          border-radius: 0;
+          text-transform: underline;
+
+
+          &:hover {
+            background: #eee;
+            color: inherit;
+          }
+        }
+
+      }
+    }
+  }
+
+}

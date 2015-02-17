@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color:#444;
   font-size: 16px;
-
+  line-height: 1.6;
 
 }
 
@@ -154,4 +154,31 @@ a.link {
     text-decoration: none;
   }
 
+}
+
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+
+
+  nav.social-links {
+    margin-top: 0;
+    color: #596368;
+
+    a {
+      margin: 0 20px;
+      background-color: transparent;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      i {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+    }
+  }
 }

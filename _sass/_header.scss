@@ -1,17 +1,18 @@
 .epk-header {
 
-  //height: 250px;
+  //height: 300px;
   align: center;
-  background: #33435a;
-  padding: 60px;
-  color: white;
+  background: #eee;
+  padding: 40px 0 0 0;
+  color: #333;
 
 
   h1.main-heading {
     font-size: 4rem;
-    color: white;
+    color: #333;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    margin-top: 0;
 
   }
 
@@ -38,12 +39,17 @@
 
 
 nav.social-links {
-  margin-top: 30px;
+  //margin-top: 30px;
   color: #596368;
 
   a {
-    margin: 0 40px;
+    margin: 0 10px;
     background-color: transparent;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
 
     i {
       margin-right: 10px;

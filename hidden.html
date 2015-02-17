@@ -6,18 +6,14 @@ layout: default
 
 
 
-<section class="epk-header">
+<section class="epk-header" ng-controller="HeroController">
 
-  <div class="container squeeze align-center">
+  <div class="container align-center">
 
     <h1 class="main-heading">Press Resources</h1>
 
+    <canvas class="music-vis" id="analyser_render"></canvas>
 
-    <nav class="social-links">
-      <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><i class="fa fa-facebook"></i>BiteNightBand</a>
-      <a ng-href="https://twitter.com/bite_night" target="_blank"><i class="fa fa-twitter"></i>@Bite_Night</a>
-      <a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><i class="fa fa-youtube"></i>Bite Night Band</a>
-    </nav>
 
   </div>
 
@@ -36,14 +32,14 @@ layout: default
 
     <div class="col-sm-3 press-nav hidden-xs">
 
-      <ul class="nav nav-stacked press-nav-spy" data-spy="affix" data-offset-top="350">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="360">
 
-        <li><a ng-href="#section-bio">Biography</a></li>
-        <li><a ng-href="#section-timeline">Timeline</a></li>
-        <li><a ng-href="#section-faq">FAQ</a></li>
-        <li><a ng-href="#section-music">Music</a></li>
-        <li><a ng-href="#section-photos">Photos</a></li>
-        <li><a ng-href="#section-contact">Contact</a></li>
+        <li><a href="#section-bio" class="page-scroll">Biography</a></li>
+        <li><a href="#section-timeline" class="page-scroll">Timeline</a></li>
+        <li><a href="#section-members" class="page-scroll">Members</a></li>
+        <li><a href="#section-music" class="page-scroll">Music</a></li>
+        <li><a href="#section-photos" class="page-scroll">Photos</a></li>
+        <li><a href="#section-contact" class="page-scroll">Contact</a></li>
 
       </ul>
 
@@ -56,54 +52,40 @@ layout: default
       <section class="page-section" id="section-bio">
 
             <section class="bio">
+
               <h4>BACKSTORY</h4>
 
-              <p>2014 was set to be a big year for the Indie music scene as 4 beautifully
-                average looking men from the Highlands of Scotland decided instead of
-                being in the crowd at the bar why not be on the stage and start getting.
-              </p>
-
-
-              <p>Scottish Indie Rockers Bite Night formed in early 2014 and the four
-                piece hit the ground running making it to the
-                <a ng-href="http://www.inverness-courier.co.uk/Whats-On/Music/Grand-Final-Preview-The-Eagle-Battle-Of-The-Bands-29012014.htm">
-                final of the Highland Battle of the Bands</a> in their first three gigs amongst stiff and far
-                more experienced competition.
-              </p>
-
-            </section>
-
-            <section class="bio">
-
-              <h4>MUSIC STYLE AND INFLUENCES</h4>
+              <p>Scottish Indie Rockers Bite Night formed in early 2014 and the
+              four piece hit the ground running making it to the final of the
+              Highland battle of the bands in their first three gigs amongst
+              stiff and far more experienced competition.</p>
 
               <p>The success of that subsequently led to gaining some great support
-                slots namely the bands first appearance at the famous Ironworks venue
-                to support the hotly tipped Palma Violets.
-                From there on in with gigs all over Scotland and a growing confidence
-                the band played to a busy tent at Belladrum Festival, not a bad
-                achievement for band who formed only 8 months prior and surely a
-                highlight of their journey so far.
-              </p>
+              slots namely the bands first appearance at the famous Ironworks
+              venue to support the hotly tipped Palma Violets.</p>
+
+              <p>From there on in with gigs all over Scotland and a growing
+              confidence the band played to a busy tent at Belladrum Festival,
+              not a bad achievement for band who formed only 8 months prior and
+              surely a highlight of their journey so far.</p>
 
             </section>
 
             <section class="bio">
 
-              <h4>SOMETHING</h4>
+              <h4>PRESENT</h4>
 
               <p>The band have now released a 4 track EP of which one of the tracks
-                "Adelaide Eyes" was selected to appear in R2 Magazines un signed
-                compilation cd for January 2015.
-                The boys also made their first music video with some raunchy oiled up
-                wrestling scenes which is sure to turn heads.
-              </p>
+              "Adelaide Eyes" was selected to appear in R2 Magazines un signed
+              compilation cd for January 2015.</p>
 
+              <p>The boys also made their first music video with some raunchy
+              oiled up wrestling scenes which is sure to turn heads.</p>
 
               <p>2015 already looks set eclipse 2014s achievements with Brew at the
-                Bog festival and a Main Stage slot at Belladrum already in the
-                pipeline for the handsome fellas the future is sure bright.
-              </p>
+              Bog festival and a Main Stage slot at Belladrum already in the
+              pipeline for the handsome fellas the future is sure bright.</p>
+
 
             </section>
 
@@ -129,7 +111,7 @@ layout: default
 
             <div class="col-md-6">
 
-              <div class="member-pic img-responsive"></div>
+              <img src="/images/photos/benz.jpg" class="member-pic img-responsive" />
 
             </div>
 
@@ -154,7 +136,7 @@ layout: default
 
             <div class="col-md-6">
 
-              <div class="member-pic img-responsive"></div>
+              <img src="/images/photos/benr.jpg" class="member-pic img-responsive" />
 
             </div>
 
@@ -180,7 +162,7 @@ layout: default
 
             <div class="col-md-6">
 
-              <div class="member-pic img-responsive"></div>
+              <img src="/images/photos/kenny.jpg" class="member-pic img-responsive" />
 
             </div>
 
@@ -204,7 +186,7 @@ layout: default
 
             <div class="col-md-6">
 
-              <div class="member-pic img-responsive"></div>
+              <img src="/images/photos/lisle.jpg" class="member-pic img-responsive" />
 
             </div>
 
@@ -232,22 +214,30 @@ layout: default
 
 
 
-
-
-      <section id="section-events" class="page-section">
-
-
-
-
-      </section>
+      <section id="section-music" class="page-section" ng-controller="MusicController">
 
 
 
 
-      <section id="section-music" class="page-section">
+
+        <!-- <canvas class="music-vis" id="analyser_render"></canvas> -->
 
 
-        {% include music.html %}
+        <div class="player">
+
+          <div ng-show="!songs.length">No Tracks</div>
+
+          <div class="player-item" ng-repeat="song in songs">
+
+            <button ng-click="play(song)" class="btn btn-link"><i class="fa fa-play"></i></button>
+
+            <div class="player-track-name">{[{ song.title }]}</div>
+
+
+
+          </div>
+
+        </div>
 
 
 
@@ -298,3 +288,40 @@ layout: default
   </div>
 
 </div>
+
+
+
+<section class="footer-padding">
+
+</section>
+
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <p class="pull-left">Copyright &#169; 2015 Bitenight</p>
+
+
+        <nav class="social-links pull-right">
+          <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><img src="/images/icons/Facebook.png"></a>
+          <a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/Twitter.png"></a>
+          <a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><img src="/images/icons/YouTube.png"></a>
+          <a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/SoundCloud.png"></a>
+        </nav>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</footer>

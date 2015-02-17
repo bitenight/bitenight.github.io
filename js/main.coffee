@@ -12,7 +12,7 @@ class Visualizer
 		@audio.src = filePath + '?client_id=' + @client_id
 
 		#@audio.loop = true
-		@audio.autoplay = true
+		#@audio.autoplay = true
 		#document.getElementById('audio_box').appendChild(@audio)
 
 		@canvas = document.getElementById('analyser_render')
@@ -27,13 +27,24 @@ class Visualizer
 		@source.connect(@analyser)
 		@analyser.connect(@context.destination)
 
-		this.loop()
+
+		console.log @source.mediaElement
 
 
 
 	play: () =>
 
-		@source.MediaElement.play()
+		@source.mediaElement.play()
+
+		this.loop()
+
+
+
+	stop: () =>
+
+		@source.mediaElement.Stop()
+
+		#this.loop()
 
 
 	loop: () =>
@@ -122,13 +133,23 @@ app.controller 'HeroController', [ '$scope', 'Songs', ($scope, Songs) ->
 
 		console.log $scope.song
 
-		visualizer = new Visualizer($scope.song.stream_url, 150)
-
-
-
-
-
+		$scope.visualizer = new Visualizer($scope.song.stream_url, 150)
 	)
+
+
+
+	$scope.play = () ->
+
+		$scope.visualizer.play()
+
+
+	$scope.stop = () ->
+
+		$scope.visualizer.stop()
+
+
+
+
 
 ]
 

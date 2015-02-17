@@ -6,19 +6,17 @@ class Visualizer
 
 	constructor: (filePath, @bars_amount) ->
 
-		@audio = new Audio()
-		@audio.src = filePath
+		@client_id = '64d890ff67b7796c0b7f927d15ef7037'
 
-		@audio.loop = true
+		@audio = new Audio()
+		@audio.src = filePath + '?client_id=' + @client_id
+
+		#@audio.loop = true
 		@audio.autoplay = true
 		#document.getElementById('audio_box').appendChild(@audio)
 
 		@canvas = document.getElementById('analyser_render')
 		@context = new AudioContext()
-
-
-	initPlayer: () =>
-
 
 
 		@analyser = @context.createAnalyser()
@@ -32,6 +30,12 @@ class Visualizer
 		this.loop()
 
 
+
+	play: () =>
+
+		@source.MediaElement.play()
+
+
 	loop: () =>
 
 
@@ -41,7 +45,7 @@ class Visualizer
 		@analyser.getByteFrequencyData(@fbc_array)
 
 		@ctx.clearRect(0, 0, @canvas.width, @canvas.height)
-		@ctx.fillStyle = '#2c43d7'
+		@ctx.fillStyle = '#0b0f82'
 
 
 		bars = [1..@bars_amount]
@@ -110,22 +114,28 @@ app.controller 'OffCanvasController', [ ->
 
 
 
-app.controller 'HeroController', [ ->
+app.controller 'HeroController', [ '$scope', 'Songs', ($scope, Songs) ->
 
-	visualizer = new Visualizer('/sounds/recit.mp3', 150)
+	$scope.resource = Songs.query({id: 79743396}, (result) =>
 
-	visualizer.initPlayer()
+		$scope.song = result[0]
+
+		console.log $scope.song
+
+		visualizer = new Visualizer($scope.song.stream_url, 150)
+
+
+
+
+
+	)
 
 ]
 
 
 app.controller 'MusicController', [ '$scope', 'Songs', ($scope, Songs) ->
 
-	#$scope.visualizer = new Visualizer('/sounds/recit.mp3', 100)
 
-	#$scope.visualizer.initPlayer()
-
-	#console.log $scope.visualizer
 
 	$scope.songs = []
 
@@ -137,7 +147,7 @@ app.controller 'MusicController', [ '$scope', 'Songs', ($scope, Songs) ->
 
 		$scope.songs = result
 
-		console.log result
+		#console.log result
 
 	)
 

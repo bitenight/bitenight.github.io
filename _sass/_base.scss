@@ -2,13 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
 
 
-$primary-color: #89CFF0;
+$primary-color:    #89CFF0;
 $secondary-color: yellow;
+$third-color: #222;
 
 
 body {
   font-family: 'Roboto', sans-serif;
-  color:#444;
+  color: $third-color;
   font-size: 16px;
   line-height: 1.6;
 
@@ -18,7 +19,7 @@ h1, h2, h3, h4, h5, h6  {
   font-family: 'Roboto Slab', serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #292e31;
+  color: $third-color;
 }
 
 h2 {
@@ -92,7 +93,7 @@ section.page-section {
 
 a {
   padding: 2px;
-  color: #333;
+  color: $third-color;
   background-color: $primary-color;
   border-bottom: 2px dashed $secondary-color;
 

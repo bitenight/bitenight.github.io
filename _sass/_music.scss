@@ -15,12 +15,12 @@
     padding: 8px 24px;
 
     //border-top: 1px solid #333;
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px dashed $secondary-color;
     font-size: 16px;
 
 
     button {
-      color: #333;
+      color: $third-color;
     }
 
     .player-track-name {

@@ -1,6 +1,6 @@
 .epk-header {
 
-  //height: 300px;
+  min-height: 300px;
   align: center;
   background: #eee;
   padding: 40px 0 0 0;
@@ -45,6 +45,7 @@ nav.social-links {
   a {
     margin: 0 10px;
     background-color: transparent;
+    border: 0;
 
     img {
       width: 30px;

@@ -6,13 +6,24 @@ layout: default
 
 
 
-<section class="epk-header" ng-controller="HeroController">
+<section class="epk-header">
 
-  <div class="container align-center">
+  <div class="container">
 
-    <!-- <button ng-click="play()">Play</button> -->
+    <div class="row">
 
-    <canvas class="music-vis" id="analyser_render"></canvas>
+
+
+      <div class="col-md-12 align-center">
+
+
+
+
+      </div>
+
+    </div>
+
+
 
 
   </div>
@@ -32,11 +43,12 @@ layout: default
 
     <div class="col-sm-3 press-nav hidden-xs">
 
-      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="307">
+      <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="360">
 
         <li><a href="#section-bio" class="page-scroll">Biography</a></li>
-        <li><a href="#section-timeline" class="page-scroll">Timeline</a></li>
         <li><a href="#section-members" class="page-scroll">Members</a></li>
+        <li><a href="#section-timeline" class="page-scroll">Timeline</a></li>
+
         <li><a href="#section-music" class="page-scroll">Music</a></li>
         <li><a href="#section-photos" class="page-scroll">Photos</a></li>
         <li><a href="#section-contact" class="page-scroll">Contact</a></li>
@@ -95,11 +107,7 @@ layout: default
       </section>
 
 
-      <section class="page-section" id="section-timeline">
 
-          {% include timeline.html %}
-
-      </section>
 
 
 
@@ -212,6 +220,13 @@ layout: default
       </section>
 
 
+      <section class="page-section" id="section-timeline">
+
+          {% include timeline.html %}
+
+      </section>
+
+
 
 
       <section id="section-music" class="page-section" ng-controller="MusicController">
@@ -220,19 +235,21 @@ layout: default
 
 
 
-        <!-- <canvas class="music-vis" id="analyser_render"></canvas> -->
+        <canvas class="music-vis" id="analyser_render"></canvas>
 
 
         <div class="player">
 
-          <div ng-show="!songs.length">No Tracks</div>
+
+
 
           <div class="player-item" ng-repeat="song in songs">
 
-            <button ng-click="play(song)" class="btn btn-link"><i class="fa fa-play"></i></button>
+            <button ng-click="play(song)" class="btn btn-link" ng-show="!song.playing"><i class="fa fa-play"></i></button>
+            <button ng-click="stop(song)" class="btn btn-link" ng-show="song.playing"><i class="fa fa-stop"></i></button>
 
             <div class="player-track-name">{[{ song.title }]}</div>
-
+            <div class="player-track-name" ng-show="!songs.length">No Tracks</div>
 
 
           </div>
@@ -250,7 +267,6 @@ layout: default
 
           <div class="row">
 
-
               <div class="col-md-4">
                 <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
               </div>
@@ -258,16 +274,29 @@ layout: default
                 <img src="/images/photos/naked.jpg" class="photo img-responsive" alt="Responsive image">
               </div>
               <div class="col-md-4">
-                <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
-              </div>
-              <div class="col-md-4">
-                <img src="/images/belladrum.jpg" class="photo img-responsive" alt="Responsive image">
+                <img src="/images/photos/benr.jpg" class="photo img-responsive" alt="Responsive image">
               </div>
 
           </div>
 
+          <div class="row">
 
-          <button class="btn btn-custom center-block">Download All Photos</button>
+            <div class="col-md-4">
+              <img src="/images/photos/benz.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+            <div class="col-md-4">
+              <img src="/images/photos/cover.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+            <div class="col-md-4">
+              <img src="/images/photos/lisle.jpg" class="photo img-responsive" alt="Responsive image">
+            </div>
+
+          </div>
+
+
+          <button class="btn btn-custom center-block" disabled>Download All Photos</button>
 
 
       </section>

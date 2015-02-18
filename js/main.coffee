@@ -2,14 +2,16 @@
 ---
 
 
-class Visualizer
+class MusicPlayer
 
-	constructor: (filePath, @bars_amount) ->
+	constructor: (@bars_amount, @visuals = false) ->
+
+		@isPlaying = false
 
 		@client_id = '64d890ff67b7796c0b7f927d15ef7037'
 
 		@audio = new Audio()
-		@audio.src = filePath + '?client_id=' + @client_id
+
 
 		#@audio.loop = true
 		#@audio.autoplay = true
@@ -32,19 +34,29 @@ class Visualizer
 
 
 
-	play: () =>
+	play: (source) =>
+
+		this.stop() if @isPlaying
+
+		@audio.src = source.stream_url + '?client_id=' + @client_id
 
 		@source.mediaElement.play()
 
-		this.loop()
+		@isPlaying = true
+
+		this.loop() if @visuals
 
 
 
 	stop: () =>
 
-		@source.mediaElement.Stop()
+		return if not @isPlaying
 
-		#this.loop()
+		@source.mediaElement.pause()
+
+		@audio.src = ''
+
+		@isPlaying = false
 
 
 	loop: () =>
@@ -56,7 +68,7 @@ class Visualizer
 		@analyser.getByteFrequencyData(@fbc_array)
 
 		@ctx.clearRect(0, 0, @canvas.width, @canvas.height)
-		@ctx.fillStyle = '#0b0f82'
+		@ctx.fillStyle = '#bbb'
 
 
 		bars = [1..@bars_amount]
@@ -133,7 +145,7 @@ app.controller 'HeroController', [ '$scope', 'Songs', ($scope, Songs) ->
 
 		console.log $scope.song
 
-		$scope.visualizer = new Visualizer($scope.song.stream_url, 150)
+		#$scope.visualizer = new Visualizer($scope.song.stream_url, 150)
 	)
 
 
@@ -156,13 +168,13 @@ app.controller 'HeroController', [ '$scope', 'Songs', ($scope, Songs) ->
 
 app.controller 'MusicController', [ '$scope', 'Songs', ($scope, Songs) ->
 
-
+	$scope.player = new MusicPlayer(100, true)
 
 	$scope.songs = []
 
-	$scope.current_song = null
 
-	$scope.playing = false
+	$scope.current = null
+
 
 	$scope.resource = Songs.query({id: 79743396}, (result) =>
 
@@ -174,16 +186,26 @@ app.controller 'MusicController', [ '$scope', 'Songs', ($scope, Songs) ->
 
 
 
-	$scope.play = (song) ->
+	$scope.play = (song) =>
 
-		$scope.playing = !$scope.playing
+		$scope.stop($scope.current) if $scope.current
 
-		$scope.current_song.destruct() if $scope.current_song
+		$scope.current = song
 
-		SC.stream(song.stream_url, (song) ->
-			$scope.current_song = song
-			$scope.current_song.play()
-		)
+		$scope.player.play(song)
+
+		song.playing = true
+
+		return false
+
+
+	$scope.stop = (song) =>
+
+		song.playing = false
+
+		$scope.player.stop()
+
+
 
 		return false
 ]

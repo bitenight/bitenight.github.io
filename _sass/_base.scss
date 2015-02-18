@@ -2,6 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700);
 
 
+$primary-color: #89CFF0;
+$secondary-color: yellow;
+
+
 body {
   font-family: 'Roboto', sans-serif;
   color:#444;
@@ -31,7 +35,7 @@ h4 {
   padding-top: 4em;
 
   a {
-    background-color: white;
+    background-color: $primary-color;
   }
 
 
@@ -89,8 +93,8 @@ section.page-section {
 a {
   padding: 2px;
   color: #333;
-  background-color: #7a8cf3;
-  background-color: rgba(51, 67, 90, 0.15);
+  background-color: $primary-color;
+  border-bottom: 2px dashed $secondary-color;
 
   &:hover {
     //background-color: #efefef;
@@ -159,7 +163,7 @@ a.link {
 
 footer {
   padding: 40px 0;
-  border-top: 1px solid #eee;
+  //border-top: 1px solid #eee;
 
 
   nav.social-links {
@@ -169,6 +173,7 @@ footer {
     a {
       margin: 0 20px;
       background-color: transparent;
+      border: 0;
 
       img {
         width: 30px;

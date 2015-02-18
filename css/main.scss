@@ -40,10 +40,15 @@
 @import "music";
 
 
+body {
+  background: #89CFF0;
+}
+
+
 .page-section {
     height: 100%;
     padding-top: 150px;
-    background: #fff;
+    //background: #fff;
 }
 
 .footer-padding {
@@ -59,21 +64,27 @@
     li {
 
       a {
-        color: #777;
+        color: #444;
+        border: 0;
+
+        &:hover {
+          border-bottom: 2px dashed $secondary-color;
+          background: $primary-color;
+        }
       }
 
       &.active {
 
         a {
           color: #333;
-          background: white;
-          border: 2px solid #333;
+          background: $primary-color;
+          border: 2px dashed $secondary-color;
           border-radius: 0;
           text-transform: underline;
 
 
           &:hover {
-            background: #eee;
+            background: $primary-color;
             color: inherit;
           }
         }
@@ -88,12 +99,25 @@
 .logo-override {
   background: #89CFF0;
   padding: 40px 0;
+  padding-bottom: 0;
 
 }
 
 
-.dotted {
+.header-dotted {
   border: 2px dashed yellow;
+  border-bottom: 0;
   padding: 40px;
+
+
+}
+
+
+.body-dotted {
+  background: #89CFF0;
+  border: 2px dashed yellow;
+  border-top: 0;
+  padding: 40px;
+
 
 }

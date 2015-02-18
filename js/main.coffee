@@ -68,7 +68,7 @@ class MusicPlayer
 		@analyser.getByteFrequencyData(@fbc_array)
 
 		@ctx.clearRect(0, 0, @canvas.width, @canvas.height)
-		@ctx.fillStyle = '#bbb'
+		@ctx.fillStyle = 'yellow'
 
 
 		bars = [1..@bars_amount]

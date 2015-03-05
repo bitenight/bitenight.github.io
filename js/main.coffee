@@ -4,9 +4,27 @@
 
 $ ->
 
-	$('.navbar-collapse a').click ->
-    $(".navbar-collapse").collapse('hide')
-	
+
+
+	@isOpen = false
+
+	$('.navbar-collapse').on 'shown.bs.collapse', ->
+		@isOpen = true
+		console.log @isOpen
+	$('.navbar-collapse').on 'hidden.bs.collapse', ->
+		@isOpen = false
+		console.log @isOpen
+
+
+
+	$('.navbar-collapse a').click =>
+		if @isOpen
+			$(".navbar-collapse").collapse('hide')
+		#else
+			#console.log 'not open'
+
+
+
 
 
 class MusicPlayer

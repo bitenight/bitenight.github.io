@@ -109,8 +109,8 @@ body {
 
 
   img {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
 
   }
 }
@@ -131,9 +131,8 @@ body {
 
 .jumbotron {
   height: 500px;
-  background-image: url("/images/banner.jpg");
-  background-repeat:no-repeat;
-  background-position: top center;
+  background: linear-gradient(rgba(49,53,43,0.5) 100%, #000),url("../images/banner-small.jpg") top no-repeat,#464c3e;
+
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -28,11 +28,11 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 
 @import "base";
-@import "offcanvas";
+
 @import "members";
-@import "navigation";
-@import "bio";
-@import "header";
+
+
+
 @import "contact";
 @import "photos";
 @import "timeline";
@@ -41,15 +41,61 @@
 
 
 body {
-  background: $primary-color;
+
 }
 
+
+.bio {
+  margin-bottom: 40px;
+}
+
+
+.btn-custom {
+  padding: 12px 36px;
+  border: 2px dashed $secondary-color;
+  border-radius: 3px;
+  color: $third-color;
+  font-size: 16px;
+  background: transparent;
+
+  i {
+    margin: 0 0 0 10px;
+  }
+}
 
 .page-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     //background: #fff;
 }
+
+.navbar-default {
+  background: white;
+  border: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+
+  .navbar-nav {
+
+    .active a, .active a:hover {
+      color: #000;
+      background: white;
+
+    }
+
+  }
+
+}
+
+
+.brand {
+  margin: 0 30px;
+}
+
+
 
 .footer-padding {
   height: 30px;
@@ -57,40 +103,40 @@ body {
 
 
 
-.press-nav {
 
-  ul {
-
-    li {
-
-      a {
-        color: $third-color;
-        border: 0;
-
-        &:hover {
-          
-          background: $primary-color;
-        }
-      }
-
-      &.active {
-
-        a {
-          color: $third-color;
-          background: $primary-color;
-          border: 2px dashed $secondary-color;
-          border-radius: 0;
-          text-transform: underline;
+.social-links {
 
 
-          &:hover {
-            background: $primary-color;
-            color: inherit;
-          }
-        }
 
-      }
-    }
+  img {
+    width: 22px;
+    height: 22px;
+
   }
+}
+
+
+.nav-icon {
+
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+
+
+
+.jumbotron {
+  height: 500px;
+  background-image: url("/images/banner.jpg");
+  background-repeat:no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
 }

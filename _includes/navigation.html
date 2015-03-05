@@ -1,42 +1,38 @@
-<div ng-controller="OffCanvasController as ctrl">
-
-  <div class="navigation">
+<nav class="navbar navbar-default navbar-fixed-top">
+      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
       <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-        <div class="col-md-12">
-
-          <div class="pull-left">
-
-            <img src="/images/logo.svg" />
-          </div>
-
-          <div class="pull-right">
-            <nav class="social-links">
-              <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><img src="/images/icons/Facebook.png"></a>
-              <a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/Twitter.png"></a>
-              <a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><img src="/images/icons/YouTube.png"></a>
-              <a ng-href="https://soundcloud.com/bitenight" target="_blank"><img src="/images/icons/SoundCloud.png"></a>
-            </nav>
-          </div>
-
-
+            <img alt="Brand" src="/images/logo.jpg" width="45" height="45" class="brand img-responsive">
 
         </div>
 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li><a href="#section-bio" class="page-scroll">Biography</a></li>
+            <li><a href="#section-music" class="page-scroll">Music</a></li>
+            <li><a href="#section-members" class="page-scroll">Members</a></li>
+            <li><a href="#section-timeline" class="page-scroll">Events</a></li>
+            <li><a href="#section-photos" class="page-scroll">Photos</a></li>
+            <li><a href="#section-contact" class="page-scroll">Contact</a></li>
+          </ul>
+
+          <!--
+
+          <ul class="nav navbar-nav navbar-right social-links">
+
+            <li><a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><img src="/images/icons/Facebook.png"></a></li>
+            <li><a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/Twitter.png"></a></li>
+            <li><a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><img src="/images/icons/YouTube.png"></a></li>
+            <li><a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/SoundCloud.png"></a></li>
+
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
       </div>
-  </div>
-
-
-  <!--
-  <div class="offcanvas" ng-cloak ng-show="ctrl.isActive">
-
-				<ul>
-					<li><a class="icon icon-data" href="/">Home</a></li>
-					<li><a class="icon icon-location" href="/projects">Projects</a></li>
-					<li><a class="icon icon-study" href="/services">Services</a></li>
-					<li><a class="icon icon-photo" href="/hire">Hire Me</a></li>
-
-				</ul>
-  </div> -->
-
-</div>
+    </nav>

@@ -1,2 +1,333 @@
 ---
+layout: default
 ---
+
+
+<div class="jumbotron">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+  <div class="row">
+
+
+    <div class="col-sm-8 col-sm-offset-2">
+
+
+      <section class="page-section" id="section-bio">
+
+            <section class="bio">
+
+              <h4>BACKSTORY</h4>
+
+              <p>Scottish Indie Rockers Bite Night formed in early 2014 and the
+              four piece hit the ground running making it to the final of the
+              Highland battle of the bands in their first three gigs amongst
+              stiff and far more experienced competition.</p>
+
+              <p>The success of that subsequently led to gaining some great support
+              slots namely the bands first appearance at the famous Ironworks
+              venue to support the hotly tipped Palma Violets.</p>
+
+              <p>From there on in with gigs all over Scotland and a growing
+              confidence the band played to a busy tent at Belladrum Festival,
+              not a bad achievement for band who formed only 8 months prior and
+              surely a highlight of their journey so far.</p>
+
+            </section>
+
+            <section class="bio">
+
+              <h4>PRESENT</h4>
+
+              <p>The band have now released a 4 track EP of which one of the tracks
+              "Adelaide Eyes" was selected to appear in R2 Magazines un signed
+              compilation cd for January 2015.</p>
+
+              <p>The boys also made their first music video with some raunchy
+              oiled up wrestling scenes which is sure to turn heads.</p>
+
+              <p>2015 already looks set eclipse 2014s achievements with Brew at the
+              Bog festival and a Main Stage slot at Belladrum already in the
+              pipeline for the handsome fellas the future is sure bright.</p>
+
+
+            </section>
+
+
+
+
+      </section>
+
+
+
+      <section id="section-music" class="page-section" ng-controller="MusicController">
+
+
+
+
+
+        <canvas class="music-vis" id="analyser_render"></canvas>
+
+
+        <div class="player">
+
+
+
+
+          <div class="player-item" ng-repeat="song in songs">
+
+            <button ng-click="play(song)" class="btn btn-link" ng-show="!song.playing"><i class="fa fa-play"></i></button>
+            <button ng-click="stop(song)" class="btn btn-link" ng-show="song.playing"><i class="fa fa-stop"></i></button>
+
+            <div class="player-track-name">{[{ song.title }]}</div>
+            <div class="player-track-name" ng-show="!songs.length">No Tracks</div>
+
+
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+
+
+
+
+
+      <section id="section-members" class="page-section">
+
+
+
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <img src="/images/photos/benz.jpg" class="member-pic img-responsive" />
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <h2 class="member-name">Ben Zebrowski</h2>
+              <span class="member-role">Singer/Guitarist</span>
+
+              <p class="member-bio">With Scottish, Polish and English blood in him and the ability to
+                speak 2 of those languages Ben is the songwriter, Ben can often be
+                spotted singing wildly out of tune on the A9 (in his car).
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <img src="/images/photos/benr.jpg" class="member-pic img-responsive" />
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <h2 class="member-name">Ben Rait</h2>
+              <span class="member-role">Lead Guitar</span>
+
+              <p class="member-bio">A previous bedroom busker Ben the lead guitarist is utterly brilliant
+                on the guitar and gives the band our signature sound as
+                long as he’s well fed.
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <img src="/images/photos/kenny.jpg" class="member-pic img-responsive" />
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <h2 class="member-name">Kenny Lyall</h2>
+              <span class="member-role">DRUMMER</span>
+
+              <p class="member-bio">Kenny the drummer started off his drumming career on the pots and
+                pans in his mums kitchen in Wick before becoming the flawless time
+                keeper of the band.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="row member">
+
+            <div class="col-md-6">
+
+              <img src="/images/photos/lisle.jpg" class="member-pic img-responsive" />
+
+            </div>
+
+
+            <div class="col-md-6">
+
+              <h2 class="member-name">Lisle Geddes</h2>
+              <span class="member-role">Bass</span>
+
+              <p class="member-bio">Hailing from the distant forests of Cannich lisle lovely smile
+                which few have seen compliment the youngest of the groups fantastic
+                ability on the bass
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+
+
+      </section>
+
+
+      <section class="page-section" id="section-timeline">
+
+          {% include timeline.html %}
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <section id="section-photos" class="page-section">
+
+          <div class="row">
+
+            <div class="col-md-4">
+              <a href="/images/photos/9800.jpg" data-lightbox="/images/photos/9800.jpg">
+                <img src="/images/photos/9800.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/images/photos/9822.jpg" data-lightbox="/images/photos/9822.jpg">
+                <img src="/images/photos/9822.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/images/photos/9858.jpg" data-lightbox="/images/photos/9858.jpg">
+                <img src="/images/photos/9858.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/images/photos/9885.jpg" data-lightbox="/images/photos/9885.jpg">
+                <img src="/images/photos/9885.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/images/photos/9958.jpg" data-lightbox="/images/photos/9958.jpg">
+                <img src="/images/photos/9958.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <a href="/images/photos/9966.jpg" data-lightbox="/images/photos/9966.jpg">
+                <img src="/images/photos/9966.jpg" alt="" class="thumbnail img-responsive" />
+              </a>
+            </div>
+          </div>
+
+
+          <button class="btn btn-custom center-block" disabled>Download All Photos</button>
+
+
+      </section>
+
+
+
+
+      <section id="section-contact" class="page-section">
+
+
+          {% include contact.html %}
+
+
+      </section>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<section class="footer-padding">
+
+</section>
+
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <p class="pull-left">Copyright &#169; 2015 Bitenight</p>
+
+
+        <nav class="social-links pull-right">
+          <a ng-href="https://www.facebook.com/BiteNightBand" target="_blank"><img src="/images/icons/Facebook.png"></a>
+          <a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/Twitter.png"></a>
+          <a ng-href="https://www.youtube.com/channel/UCrSJDQrldnwZUs0eBngMG3g" target="_blank"><img src="/images/icons/YouTube.png"></a>
+          <a ng-href="https://twitter.com/bite_night" target="_blank"><img src="/images/icons/SoundCloud.png"></a>
+        </nav>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</footer>

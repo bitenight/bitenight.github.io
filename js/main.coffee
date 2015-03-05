@@ -2,6 +2,13 @@
 ---
 
 
+$ ->
+
+	$('.navbar-collapse a').click ->
+    $(".navbar-collapse").collapse('hide')
+	
+
+
 class MusicPlayer
 
 	constructor: (@bars_amount, @visuals = false) ->
